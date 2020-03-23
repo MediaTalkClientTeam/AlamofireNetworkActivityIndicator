@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "AlamofireNetworkActivityLogger",
     platforms: [
-        .iOS(.v10),
+        .iOS(.v9),
         .macOS(.v10_12),
         .tvOS(.v10),
         .watchOS(.v3)
@@ -15,7 +15,7 @@ let package = Package(
             targets: ["AlamofireNetworkActivityLogger"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.0.0-rc.3")),
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .exact("4.9.1")),
     ],
     targets: [
         .target(
